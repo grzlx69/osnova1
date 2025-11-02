@@ -1,5 +1,3 @@
-console.log("Здравствуй мир!");
-
 function getFormValues() {
     let form = document.getElementById('myForm');
     let value_one = parseFloat(form.value_one.value);
@@ -7,31 +5,27 @@ function getFormValues() {
     return { value_one, value_two };
 }
 
-
 function addition(){
     let values = getFormValues();
     let result = values.value_one + values.value_two;
-    console.log(`${values.value_one} + ${values.value_two} = ${result}`);
     showResult('+', values.value_one, values.value_two, result);
 }
+
 function substraction(){
     let values = getFormValues();
     let result = values.value_one - values.value_two;
-    console.log(`${values.value_one} - ${values.value_two} = ${result}`);
     showResult('-', values.value_one, values.value_two, result);
 }
 
 function multiplication(){
     let values = getFormValues();
     let result = values.value_one * values.value_two;
-    console.log(`${values.value_one} * ${values.value_two} = ${result}`);
     showResult('*', values.value_one, values.value_two, result);
 }
 
 function division(){
     let values = getFormValues();
     let result = values.value_one / values.value_two;
-    console.log(`${values.value_one} / ${values.value_two} = ${result}`);
     showResult('/', values.value_one, values.value_two, result);
 }
 
